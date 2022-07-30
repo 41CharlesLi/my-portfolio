@@ -40,8 +40,13 @@
         flex-direction: row;
         gap: 15px;
         padding: 0;
+
         svg {
             height: 50px;
+            fill: rgba(14, 55, 14, 0.95);
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 }

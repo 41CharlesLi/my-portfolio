@@ -485,7 +485,8 @@ template {
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
 }
 
 h1,
@@ -493,6 +494,7 @@ h2,
 h3,
 p {
   letter-spacing: 0.2rem;
+  color: rgba(14, 55, 14, 0.95);
 }
 
 h1 {
@@ -506,12 +508,17 @@ h2 {
 
 p {
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  color: rgba(14, 55, 14, 0.95);
+  letter-spacing: 0.1rem;
 }
 
 header img {
-  height: 75px;
-  width: auto;
-  margin: 1rem;
+  height: auto;
+  width: 120px;
 }
 header nav {
   display: flex;
@@ -525,7 +532,7 @@ header nav .hamburger-menu {
   position: absolute;
   z-index: 4;
   right: 15px;
-  top: 30px;
+  top: 35px;
   font-size: 3rem;
   color: #333333;
 }
@@ -551,7 +558,7 @@ header .navLinks {
 header .navLinks li a {
   text-decoration: none;
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display SC", serif;
   font-size: 1.5rem;
 }
 header .show {
@@ -603,6 +610,10 @@ header .show {
 }
 .about ul svg {
   height: 50px;
+  fill: rgba(14, 55, 14, 0.95);
+}
+.about ul svg:hover {
+  opacity: 0.5;
 }
 
 .intro {
@@ -619,11 +630,15 @@ header .show {
 }
 .intro .textContainer {
   width: 95vw;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
+}
+.intro .textContainer h1 {
+  font-weight: 600;
+  color: rgba(14, 55, 14, 0.88);
 }
 .intro .textContainer p {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: rgba(14, 55, 14, 0.88);
 }
 
 .skills {
@@ -681,7 +696,7 @@ header .show {
 .skills ul li .iconName {
   opacity: 0;
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 .projects {
@@ -729,7 +744,7 @@ header .show {
   width: 110vw;
   max-width: 700px;
 }
-.projects .wrapper .textContainer ol {
+.projects .wrapper .textContainer ul {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -740,6 +755,10 @@ header .show {
   list-style: decimal inside none;
   margin: 0 auto 40px auto;
   gap: 10px;
+  color: rgba(14, 55, 14, 0.95);
+}
+.projects .wrapper .textContainer ul li {
+  text-transform: lowercase;
 }
 .projects .skillsContainer ul {
   list-style: none;
@@ -776,10 +795,10 @@ header .show {
 .projects .skillsContainer ul .liveContainer li {
   padding: 6px 12px 6px 12px;
   font-size: 1.5rem;
-  background-color: #561595;
+  background-color: rgba(14, 55, 14, 0.95);
 }
 .projects .skillsContainer ul .liveContainer li:hover {
-  background-color: darkgray;
+  background-color: rgba(14, 55, 14, 0.68);
 }
 .projects .skillsContainer ul .liveContainer li a {
   color: #f6f6f6;

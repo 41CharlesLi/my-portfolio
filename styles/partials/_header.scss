@@ -1,8 +1,7 @@
 header {
     img {
-        height: 75px;
-        width: auto;
-        margin: 1rem;
+        height: auto;
+        width: 120px;
     }
     nav {
         display: flex;
@@ -17,7 +16,7 @@ header {
             position: absolute;
             z-index: 4;
             right: 15px;
-            top: 30px;
+            top: 35px;
             font-size: 3rem;
             color: $black;
         }

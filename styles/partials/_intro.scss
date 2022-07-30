@@ -12,11 +12,15 @@
 
     .textContainer {
         width: 95vw;
-        font-family: $headingFont;
-        color: $black;
+        h1 {
+            font-weight: 600;
+            color: rgba(14, 55, 14, 0.88);
+        }
 
         p {
-            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            color: rgba(14, 55, 14, 0.88);
         }
     }
 }

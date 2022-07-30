@@ -1,7 +1,9 @@
 h1,
 h2,
 h3 {
-    font-family: $headingFont;
+    // font-family: $headingFont;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
 }
 
 h1,
@@ -9,6 +11,7 @@ h2,
 h3,
 p {
     letter-spacing: 0.2rem;
+    color: rgba(14, 55, 14, 0.95);
 }
 
 h1 {
@@ -22,4 +25,10 @@ h2 {
 
 p {
     font-size: 1.5rem;
+    font-family: $bodyFont;
+}
+
+li {
+    color: rgba(14, 55, 14, 0.95);
+    letter-spacing: 0.1rem;
 }

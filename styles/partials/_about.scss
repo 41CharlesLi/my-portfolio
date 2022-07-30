@@ -1,0 +1,47 @@
+.about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 15px 0 15px;
+    }
+    img {
+        height: 300px;
+        width: auto;
+        border-radius: 20px;
+    }
+    .textContainer {
+        .headingContainer {
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            width: fit-content;
+            &::after {
+                content: " ";
+                background: #fbc7c4;
+                position: absolute;
+                display: block;
+                height: 25px;
+                right: -15px;
+                top: 20px;
+                width: 131px;
+                opacity: 0.5;
+                z-index: -1;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 0;
+        svg {
+            height: 50px;
+        }
+    }
+}

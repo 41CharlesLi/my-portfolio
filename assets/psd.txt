@@ -1,0 +1,8 @@
+I created this multi-page website from a PSD template. It was created using HTML5 and SASS and is responsive across all devices. 
+
+I'm very happy with how the site turned out. It's my first multi-page conversion and I got to celebrate a number of technical wins/learning, including: 
+
+1) the use of grid and flex in conjunction
+2) the creation of a hamburger menu and slide out nav using only CSS
+3) from my peers I learned: how to use pseudo elements to implement design, slide-out navigation, how to troubleshoot code as a team
+4) my first site designed from an accessibility-first + mobile-first approach

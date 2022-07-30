@@ -1,0 +1,9 @@
+My first pair programming project at Juno College. We used a combination of HTML/SASS/JavaScript to complete the project. 
+
+Very proud of the growth I've shown from project 0.5 till now. The code is dryer + cleaner, and most importantly, I got a chance to demonstrate that I can be a productive member of a coding team. 
+
+Technical wins: 
+1) learning about race conditions and the limits of the console.log()
+2) Working with APIs and how to use user input to manipulate the fetch calls we make
+3) The importance of communication and checking in on a team
+4) How to support my team in a way that's respectful and inclusive

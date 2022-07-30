@@ -1,0 +1,22 @@
+.intro {
+    background-color: $offWhite;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/introBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .textContainer {
+        width: 95vw;
+        font-family: $headingFont;
+        color: $black;
+
+        p {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+        }
+    }
+}

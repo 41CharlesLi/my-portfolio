@@ -955,6 +955,11 @@ footer p {
     opacity: 0.5;
   }
 }
+@media (max-width: 1050px) {
+  .skillsContainer ul li .iconName {
+    opacity: 1;
+  }
+}
 @media (min-width: 950px) {
   header .wrapper {
     margin: 0 auto;
@@ -1030,6 +1035,11 @@ footer p {
   }
   .contact .socialContainer .socialIcons {
     justify-content: center;
+  }
+  .contact p {
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   footer .wrapper {
     margin: 0 auto;

@@ -48,6 +48,21 @@
     }
 }
 
+//media queries to show skill badge text on all
+//screens under 1050
+
+@media (max-width: 1050px) {
+    .skillsContainer {
+        ul {
+            li {
+                .iconName {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 950px) {
     //header
     header .wrapper {
@@ -133,6 +148,11 @@
             .socialIcons {
                 justify-content: center;
             }
+        }
+        p {
+            padding: 0 40px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
     }
 

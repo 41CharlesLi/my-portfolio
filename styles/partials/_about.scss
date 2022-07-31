@@ -17,24 +17,21 @@
             border-radius: 20px;
         }
     }
-
-    .textContainer {
-        .headingContainer {
-            position: relative;
-            z-index: 1;
-            width: fit-content;
-            &::after {
-                content: " ";
-                background: #fbc7c4;
-                position: absolute;
-                display: block;
-                height: 25px;
-                right: -15px;
-                top: 20px;
-                width: 131px;
-                opacity: 0.5;
-                z-index: -1;
-            }
+    h2 {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        &::after {
+            content: " ";
+            background: #fbc7c4;
+            position: absolute;
+            display: block;
+            height: 25px;
+            right: -15px;
+            top: 22px;
+            width: 145px;
+            opacity: 0.5;
+            z-index: -1;
         }
     }
 

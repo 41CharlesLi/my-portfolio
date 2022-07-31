@@ -5,6 +5,7 @@
         position: relative;
         width: fit-content;
         z-index: 1;
+        margin: 0 auto;
         &::after {
             content: " ";
             background: #fbc7c4;
@@ -17,6 +18,9 @@
             z-index: -2;
             opacity: 0.5;
         }
+    }
+    p {
+        font-family: $bodyFont;
     }
     .wrapper {
         margin: 0 30px 0 30px;

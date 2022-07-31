@@ -249,6 +249,10 @@ template {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1800px;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -598,22 +602,22 @@ header .show {
   width: auto;
   border-radius: 20px;
 }
-.about .textContainer .headingContainer {
+.about h2 {
   position: relative;
-  z-index: 1;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 auto;
 }
-.about .textContainer .headingContainer::after {
+.about h2::after {
   content: " ";
   background: #fbc7c4;
   position: absolute;
   display: block;
   height: 25px;
   right: -15px;
-  top: 20px;
-  width: 131px;
+  top: 22px;
+  width: 145px;
   opacity: 0.5;
   z-index: -1;
 }
@@ -654,22 +658,38 @@ header .show {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.intro .textContainer {
-  width: 95vw;
-}
-.intro .textContainer h1 {
+.intro .textContainer span {
   font-weight: 600;
   color: rgba(14, 55, 14, 0.88);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.intro .textContainer span::after {
+  content: " ";
+  background: #f9bdb9;
+  position: absolute;
+  display: block;
+  height: 60%;
+  width: 90%;
+  right: 0%;
+  top: 50%;
+  z-index: -4;
+  opacity: 0.5;
 }
 .intro .textContainer p {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
   color: rgba(14, 55, 14, 0.88);
+  margin-top: 20px;
 }
 
 .skills {
   background-color: #f6f6f6;
-  height: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 50px 0 50px 0;
 }
 .skills .wrapper {
   padding-top: 50px;
@@ -682,6 +702,7 @@ header .show {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 auto;
 }
 .skills .wrapper h2::after {
   content: " ";
@@ -743,9 +764,9 @@ header .show {
   position: absolute;
   display: block;
   height: 25px;
-  width: 250px;
-  right: -15px;
-  top: 55%;
+  width: 200px;
+  right: -10px;
+  top: 25px;
   z-index: -3;
   opacity: 0.5;
 }
@@ -764,9 +785,10 @@ header .show {
   display: block;
   margin-bottom: 10px;
   margin-top: 40px;
+  font-family: "Playfair Display SC", serif;
 }
 .projects .wrapper .projectContainer img {
-  width: 100vw;
+  width: 35%;
   max-width: 700px;
 }
 .projects .wrapper .textContainer ul {
@@ -836,6 +858,7 @@ header .show {
   width: -moz-fit-content;
   width: fit-content;
   z-index: 1;
+  margin: 0 auto;
 }
 .contact h2::after {
   content: " ";
@@ -848,6 +871,9 @@ header .show {
   top: 25px;
   z-index: -2;
   opacity: 0.5;
+}
+.contact p {
+  font-family: "Montserrat", sans-serif;
 }
 .contact .wrapper {
   margin: 0 30px 0 30px;
@@ -877,7 +903,128 @@ header .show {
 
 footer {
   text-align: center;
+  padding: 20px;
 }
 footer p {
   font-family: "Playfair Display SC", serif;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 335px) {
+  .intro .textContainer span {
+    position: relative;
+    z-index: 1;
+  }
+  .intro .textContainer span::after {
+    content: " ";
+    background: #f9bdb9;
+    height: 50%;
+    width: 92%;
+    right: 0%;
+    top: 45%;
+    z-index: -4;
+    opacity: 0.5;
+  }
+}
+@media (min-width: 950px) {
+  header .wrapper {
+    margin: 0 auto;
+  }
+  header nav {
+    align-items: center;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  header .navLinks {
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: transparent;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  header .navLinks li {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .navLinks li a {
+    padding: 0;
+  }
+  .about .aboutWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .about .aboutWrapper img {
+    height: 450px;
+  }
+  .about .aboutWrapper .textContainer {
+    width: 60vw;
+    max-width: 850px;
+  }
+  .about .aboutWrapper .imgContainer {
+    align-items: center;
+  }
+  .skills {
+    max-height: 700px;
+  }
+  .skills .wrapper {
+    margin: 0 auto;
+  }
+  .skills .skillsContainer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .projects .wrapper {
+    margin: 0 auto;
+  }
+  .contact h2 {
+    margin: 0 auto;
+  }
+  .contact .wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact .socialContainer {
+    margin: 0 auto;
+  }
+  .contact .socialContainer .socialIcons {
+    justify-content: center;
+  }
+  footer .wrapper {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) {
+  .projects .wrapper h2 {
+    margin-bottom: 40px;
+  }
+  .projects .wrapper .projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto 50px auto;
+  }
+  .projects .wrapper .reversed {
+    flex-direction: row-reverse;
+  }
+  .projects .wrapper .textContainer {
+    width: 65%;
+    word-break: break-word;
+    max-width: 1600px;
+  }
+  .projects .wrapper .textContainer ul {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

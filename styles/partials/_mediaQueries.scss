@@ -1,0 +1,147 @@
+//media query for h1 pseudo element
+@media (min-width: 335px) {
+    .intro {
+        .textContainer {
+            span {
+                position: relative;
+                z-index: 1;
+                &::after {
+                    content: " ";
+                    background: #f9bdb9;
+                    height: 50%;
+                    width: 92%;
+                    right: 0%;
+                    top: 45%;
+                    z-index: -4;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    //header
+    header .wrapper {
+        margin: 0 auto;
+    }
+    header nav {
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+    header .navLinks {
+        position: static;
+        transform: none;
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        background-color: transparent;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: 20px;
+        li {
+            width: fit-content;
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    //about section
+    .about .aboutWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        img {
+            height: 450px;
+        }
+        .textContainer {
+            width: 60vw;
+            max-width: 850px;
+        }
+        .imgContainer {
+            align-items: center;
+        }
+    }
+    //skills section
+
+    .skills {
+        max-height: 700px;
+        .wrapper {
+            margin: 0 auto;
+        }
+        .skillsContainer ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+
+    //projects section
+    .projects {
+        .wrapper {
+            margin: 0 auto;
+        }
+    }
+
+    //contact section
+
+    .contact {
+        h2 {
+            margin: 0 auto;
+        }
+        .wrapper {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .socialContainer {
+            margin: 0 auto;
+            .socialIcons {
+                justify-content: center;
+            }
+        }
+    }
+
+    //footer
+
+    footer {
+        .wrapper {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    //projects section
+
+    .projects {
+        .wrapper {
+            h2 {
+                margin-bottom: 40px;
+            }
+            .projectContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 0 auto 50px auto;
+            }
+            .reversed {
+                flex-direction: row-reverse;
+            }
+            .textContainer {
+                width: 65%;
+                word-break: break-word;
+                max-width: 1600px;
+                ul {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

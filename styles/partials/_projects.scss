@@ -13,9 +13,9 @@
                 position: absolute;
                 display: block;
                 height: 25px;
-                width: 250px;
-                right: -15px;
-                top: 55%;
+                width: 200px;
+                right: -10px;
+                top: 25px;
                 z-index: -3;
                 opacity: 0.5;
             }
@@ -34,9 +34,10 @@
                 display: block;
                 margin-bottom: 10px;
                 margin-top: 40px;
+                font-family: $headingFont;
             }
             img {
-                width: 100vw;
+                width: 35%;
                 max-width: 700px;
             }
         }

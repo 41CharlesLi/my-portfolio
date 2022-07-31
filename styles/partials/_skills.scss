@@ -1,6 +1,7 @@
 .skills {
     background-color: $offWhite;
-    height: 1200px;
+    height: fit-content;
+    padding: 50px 0 50px 0;
 
     .wrapper {
         padding-top: 50px;
@@ -10,6 +11,7 @@
             position: relative;
             z-index: 0;
             width: fit-content;
+            margin: 0 auto;
             &::after {
                 content: " ";
                 background: #fbc7c4;

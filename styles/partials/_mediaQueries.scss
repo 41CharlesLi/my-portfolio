@@ -20,6 +20,34 @@
     }
 }
 
+//media query for h2 contact pseudo element
+
+@media (min-width: 349px) {
+    .contact {
+        background-color: $offWhite;
+        padding: 40px 0 40px 0;
+        text-align: center;
+        h2 {
+            position: relative;
+            width: fit-content;
+            z-index: 1;
+            margin: 0 auto;
+            &::after {
+                content: " ";
+                background: #fbc7c4;
+                position: absolute;
+                display: block;
+                height: 50%;
+                width: 80%;
+                right: -5%;
+                top: 45%;
+                z-index: -2;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
 @media (min-width: 950px) {
     //header
     header .wrapper {

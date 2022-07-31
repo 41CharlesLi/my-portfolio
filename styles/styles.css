@@ -851,6 +851,7 @@ header .show {
 .contact {
   background-color: #f6f6f6;
   padding: 40px 0 40px 0;
+  text-align: center;
 }
 .contact h2 {
   position: relative;
@@ -865,10 +866,10 @@ header .show {
   background: #fbc7c4;
   position: absolute;
   display: block;
-  height: 25px;
-  width: 325px;
-  right: -5px;
-  top: 25px;
+  height: 35%;
+  width: 65%;
+  right: 10%;
+  top: 75%;
   z-index: -2;
   opacity: 0.5;
 }
@@ -923,6 +924,33 @@ footer p {
     right: 0%;
     top: 45%;
     z-index: -4;
+    opacity: 0.5;
+  }
+}
+@media (min-width: 349px) {
+  .contact {
+    background-color: #f6f6f6;
+    padding: 40px 0 40px 0;
+    text-align: center;
+  }
+  .contact h2 {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 1;
+    margin: 0 auto;
+  }
+  .contact h2::after {
+    content: " ";
+    background: #fbc7c4;
+    position: absolute;
+    display: block;
+    height: 50%;
+    width: 80%;
+    right: -5%;
+    top: 45%;
+    z-index: -2;
     opacity: 0.5;
   }
 }

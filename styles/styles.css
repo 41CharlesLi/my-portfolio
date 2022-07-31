@@ -493,7 +493,7 @@ h1,
 h2,
 h3,
 p {
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.25rem;
   color: rgba(14, 55, 14, 0.95);
 }
 
@@ -511,9 +511,10 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-li {
+li,
+a {
   color: rgba(14, 55, 14, 0.95);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 header img {
@@ -527,6 +528,7 @@ header nav {
 header nav ul {
   list-style: none;
   height: 50%;
+  color: rgba(14, 55, 14, 0.95);
 }
 header nav .hamburger-menu {
   position: absolute;
@@ -534,7 +536,10 @@ header nav .hamburger-menu {
   right: 15px;
   top: 35px;
   font-size: 3rem;
-  color: #333333;
+  color: rgba(14, 55, 14, 0.95);
+}
+header nav .fa-bars {
+  color: rgba(14, 55, 14, 0.95);
 }
 header .navLinks {
   transform: translateY(-110%);
@@ -555,11 +560,20 @@ header .navLinks {
   gap: 20px;
   transition: all 0.3s;
 }
+header .navLinks li {
+  width: 75vw;
+  text-align: center;
+  font-weight: bold;
+}
 header .navLinks li a {
   text-decoration: none;
-  color: black;
   font-family: "Playfair Display SC", serif;
   font-size: 1.5rem;
+  padding: 5px 40px 5px 40px;
+}
+header .navLinks li a:hover {
+  text-decoration: line-through;
+  opacity: 0.7;
 }
 header .show {
   transform: translateY(-3%);
@@ -572,17 +586,19 @@ header .show {
 .about .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  text-align: left;
   margin: 0 15px 0 15px;
 }
-.about img {
+.about .imgContainer {
+  display: flex;
+  justify-content: center;
+}
+.about .imgContainer img {
   height: 300px;
   width: auto;
   border-radius: 20px;
 }
 .about .textContainer .headingContainer {
-  margin: 0 auto;
   position: relative;
   z-index: 1;
   width: -webkit-fit-content;
@@ -601,24 +617,34 @@ header .show {
   opacity: 0.5;
   z-index: -1;
 }
+.about .socialContainer {
+  margin: 0;
+}
 .about ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 40px;
   padding: 0;
 }
 .about ul svg {
   height: 50px;
   fill: rgba(14, 55, 14, 0.95);
+  transition: all 0.2s;
 }
 .about ul svg:hover {
+  opacity: 0.5;
+}
+.about ul i {
+  font-size: 3.3rem;
+}
+.about ul i:hover {
   opacity: 0.5;
 }
 
 .intro {
   background-color: #f6f6f6;
-  height: 60vh;
+  height: 600px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -643,7 +669,7 @@ header .show {
 
 .skills {
   background-color: #f6f6f6;
-  height: 1100px;
+  height: 1200px;
 }
 .skills .wrapper {
   padding-top: 50px;
@@ -656,7 +682,6 @@ header .show {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
 }
 .skills .wrapper h2::after {
   content: " ";
@@ -674,7 +699,7 @@ header .show {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 10px;
   padding: 50px 0 0 0;
   justify-items: center;
 }
@@ -704,7 +729,6 @@ header .show {
 }
 .projects .wrapper {
   margin: 15px;
-  text-align: center;
 }
 .projects .wrapper h2 {
   position: relative;
@@ -733,6 +757,7 @@ header .show {
 }
 .projects .wrapper .projectContainer h3 {
   font-size: 2rem;
+  font-weight: bold;
 }
 .projects .wrapper .projectContainer span {
   font-weight: bold;
@@ -748,17 +773,13 @@ header .show {
   display: flex;
   flex-direction: column;
   padding: 0;
-  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   width: 80vw;
   list-style: decimal inside none;
-  margin: 0 auto 40px auto;
+  margin-bottom: 40px;
   gap: 10px;
   color: rgba(14, 55, 14, 0.95);
-}
-.projects .wrapper .textContainer ul li {
-  text-transform: lowercase;
 }
 .projects .skillsContainer ul {
   list-style: none;
@@ -796,10 +817,67 @@ header .show {
   padding: 6px 12px 6px 12px;
   font-size: 1.5rem;
   background-color: rgba(14, 55, 14, 0.95);
+  transition: all 0.2s;
 }
 .projects .skillsContainer ul .liveContainer li:hover {
   background-color: rgba(14, 55, 14, 0.68);
 }
 .projects .skillsContainer ul .liveContainer li a {
   color: #f6f6f6;
+}
+
+.contact {
+  background-color: #f6f6f6;
+  padding: 40px 0 40px 0;
+}
+.contact h2 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.contact h2::after {
+  content: " ";
+  background: #fbc7c4;
+  position: absolute;
+  display: block;
+  height: 25px;
+  width: 325px;
+  right: -5px;
+  top: 25px;
+  z-index: -2;
+  opacity: 0.5;
+}
+.contact .wrapper {
+  margin: 0 30px 0 30px;
+  padding: 30px 0 30px 0;
+}
+.contact .socialIcons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 40px;
+}
+.contact .socialIcons .socialLink:hover {
+  opacity: 0.5;
+}
+.contact .socialIcons i {
+  font-size: 3.3rem;
+}
+.contact .socialIcons i:hover {
+  opacity: 0.5;
+}
+.contact .socialIcons svg {
+  height: 50px;
+  width: auto;
+  fill: rgba(14, 55, 14, 0.95);
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-family: "Playfair Display SC", serif;
 }/*# sourceMappingURL=styles.css.map */

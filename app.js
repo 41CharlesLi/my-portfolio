@@ -2,7 +2,12 @@ myApp = {};
 
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("navLinks");
-myApp.open = false;
+const navLinks = document.querySelectorAll(".navLink");
+console.log(navLinks);
+
+myApp.init = () => {
+    myApp.closeMenu();
+};
 
 //function to toggle hamburger menu
 myApp.showMenu = () => {
@@ -19,3 +24,14 @@ myApp.viewPortfolio = function () {
         );
     });
 };
+
+myApp.closeMenu = function () {
+    for (let i = 0; i < navLinks.length; i++) {
+        let link = navLinks[i];
+        link.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        });
+    }
+};
+
+myApp.init();

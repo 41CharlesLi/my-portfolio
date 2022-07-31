@@ -10,7 +10,7 @@ h1,
 h2,
 h3,
 p {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.25rem;
     color: rgba(14, 55, 14, 0.95);
 }
 
@@ -28,7 +28,8 @@ p {
     font-family: $bodyFont;
 }
 
-li {
+li,
+a {
     color: rgba(14, 55, 14, 0.95);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
 }

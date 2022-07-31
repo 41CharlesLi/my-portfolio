@@ -1,6 +1,6 @@
 .skills {
     background-color: $offWhite;
-    height: 1100px;
+    height: 1200px;
 
     .wrapper {
         padding-top: 50px;
@@ -10,7 +10,6 @@
             position: relative;
             z-index: 0;
             width: fit-content;
-            margin: 0 auto;
             &::after {
                 content: " ";
                 background: #fbc7c4;
@@ -30,7 +29,7 @@
         list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 10px;
         padding: 50px 0 0 0;
         justify-items: center;
 

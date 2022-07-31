@@ -1052,6 +1052,7 @@ footer p {
     width: 65%;
     word-break: break-word;
     max-width: 1600px;
+    padding: 0 15px;
   }
   .projects .wrapper .textContainer ul {
     width: 100%;

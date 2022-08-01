@@ -7,6 +7,7 @@ console.log(navLinks);
 
 myApp.init = () => {
     myApp.closeMenu();
+    AOS.init();
 };
 
 //function to toggle hamburger menu

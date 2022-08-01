@@ -918,6 +918,7 @@ footer p {
           animation: bounce 3s ease-in-out infinite;
   visibility: hidden;
   z-index: -100;
+  opacity: 0.5;
 }
 
 .show-link {

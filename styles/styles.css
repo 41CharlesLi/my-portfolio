@@ -509,7 +509,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 2vw, 4rem);
+  font-size: 2rem;
 }
 
 p {
@@ -1002,6 +1002,9 @@ footer p {
   }
   body h1 {
     font-size: 2rem;
+  }
+  body .projects .wrapper .projectContainer h3 {
+    font-size: 1.6rem;
   }
   body .skills ul li .iconName {
     font-size: 0.75rem;

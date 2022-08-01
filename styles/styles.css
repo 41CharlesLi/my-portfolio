@@ -770,6 +770,7 @@ header .show {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .projects .wrapper .projectContainer .textContainer {
   word-wrap: break-word;

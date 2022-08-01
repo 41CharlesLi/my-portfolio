@@ -23,6 +23,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: hidden;
             .textContainer {
                 word-wrap: break-word;
                 word-break: break-word;

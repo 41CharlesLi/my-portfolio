@@ -23,8 +23,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            .textContainer {
+                word-wrap: break-word;
+                word-break: break-word;
+            }
             h3 {
-                font-size: 2rem;
+                font-size: 1.8rem;
                 font-weight: bold;
             }
             span {
@@ -63,7 +67,7 @@
             gap: 15px;
             justify-content: center;
             li {
-                width: fit-content;
+                width: max-content;
                 background-color: lightgray;
                 padding: 6px 12px 6px 12px;
                 border-radius: 10px;
@@ -80,7 +84,7 @@
             }
             .liveContainer {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 gap: 15px;
                 li {
                     padding: 6px 12px 6px 12px;

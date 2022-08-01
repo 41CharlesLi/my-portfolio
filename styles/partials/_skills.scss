@@ -31,7 +31,6 @@
         list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
         padding: 50px 0 0 0;
         justify-items: center;
 
@@ -39,7 +38,6 @@
             width: fit-content;
             display: flex;
             flex-direction: column;
-            gap: 5px;
             &:hover {
                 .iconName {
                     opacity: 1;
@@ -51,9 +49,9 @@
             }
             .iconName {
                 opacity: 0;
-                font-size: 1.2rem;
+                font-size: 1.05rem;
                 font-family: $headingFont;
-                padding-bottom: 15px;
+                padding-bottom: 25px;
             }
         }
     }

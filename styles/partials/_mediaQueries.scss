@@ -144,20 +144,17 @@
         justify-content: space-around;
         margin: 0 auto;
         img {
-            height: 450px;
+            height: 350px;
         }
         .textContainer {
             width: 60vw;
             max-width: 850px;
         }
-        .imgContainer {
-            align-items: center;
-        }
     }
     //skills section
 
     .skills {
-        max-height: 700px;
+        max-height: 900px;
         .wrapper {
             margin: 0 auto;
         }
@@ -167,6 +164,9 @@
             grid-template-rows: 1fr 1fr;
             flex-wrap: wrap;
             gap: 40px;
+            i {
+                padding-bottom: 5px;
+            }
         }
     }
 
@@ -210,6 +210,16 @@
 }
 
 @media (min-width: 1400px) {
+    //about section
+    .about {
+        .imgContainer {
+            align-items: center;
+            img {
+                height: 450px;
+            }
+        }
+    }
+
     //projects section
 
     .projects {

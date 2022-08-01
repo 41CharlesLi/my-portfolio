@@ -1123,7 +1123,7 @@ footer p {
     gap: 40px;
   }
   .projects .wrapper {
-    margin: 0 auto;
+    margin: 15px 15px;
   }
   .contact h2 {
     margin: 0 auto;
@@ -1148,6 +1148,9 @@ footer p {
   }
 }
 @media (min-width: 1400px) {
+  .projects .wrapper {
+    margin: 0 auto;
+  }
   .projects .wrapper h2 {
     margin-bottom: 40px;
   }

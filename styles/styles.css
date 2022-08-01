@@ -509,7 +509,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 2vw, 4rem);
 }
 
 p {
@@ -994,6 +994,17 @@ footer p {
 @media (max-width: 1050px) {
   .skillsContainer ul li .iconName {
     opacity: 1;
+  }
+}
+@media (max-width: 310px) {
+  body {
+    width: 100vw;
+  }
+  body h1 {
+    font-size: 2rem;
+  }
+  body .skills ul li .iconName {
+    font-size: 0.75rem;
   }
 }
 @media (min-width: 530px) {

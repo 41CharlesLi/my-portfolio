@@ -63,6 +63,21 @@
     }
 }
 
+//media query for the one person using a galaxy fold
+
+@media (max-width: 310px) {
+    body {
+        width: 100vw;
+        h1 {
+            font-size: 2rem;
+        }
+
+        .skills ul li .iconName {
+            font-size: 0.75rem;
+        }
+    }
+}
+
 //media queries for screen size at 530
 @media (min-width: 530px) {
     .typedContainer {

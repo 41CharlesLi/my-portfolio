@@ -100,10 +100,9 @@
 
 @media (min-width: 750px) {
     .top-link {
-        top: 85%;
-        right: 5px;
+        top: 90%;
+        right: 2%;
         background-color: transparent;
-        font-size: 2rem;
     }
 }
 
@@ -174,6 +173,11 @@
     .projects {
         .wrapper {
             margin: 15px 15px;
+        }
+        .skillsContainer ul {
+            .liveContainer {
+                flex-direction: row;
+            }
         }
     }
 

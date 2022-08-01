@@ -1,8 +1,8 @@
 .top-link {
-    font-size: 1.25rem;
+    font-size: clamp(2rem, 2vw, 2.2rem);
     position: fixed;
-    top: 95%;
-    right: 5px;
+    top: 92%;
+    right: 0px;
     width: 2rem;
     height: 2rem;
     background-color: transparent;

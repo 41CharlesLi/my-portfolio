@@ -524,6 +524,10 @@ a {
   font-size: clamp(1rem, 2vw, 2.5rem);
 }
 
+.socialContainer i {
+  font-size: clamp(1.75rem, 4vw, 4rem);
+}
+
 header img {
   height: auto;
   width: 120px;
@@ -541,7 +545,7 @@ header nav .hamburger-menu {
   position: absolute;
   z-index: 4;
   right: 15px;
-  top: 35px;
+  top: 30px;
   font-size: 3rem;
   color: rgba(14, 55, 14, 0.95);
 }
@@ -631,19 +635,8 @@ header .show {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 30px;
   padding: 0;
-}
-.about ul svg {
-  height: 50px;
-  fill: rgba(14, 55, 14, 0.95);
-  transition: all 0.2s;
-}
-.about ul svg:hover {
-  opacity: 0.5;
-}
-.about ul i {
-  font-size: 2.55rem;
 }
 .about ul i:hover {
   opacity: 0.5;
@@ -681,7 +674,7 @@ header .show {
   opacity: 0.5;
 }
 .intro .textContainer p {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.2rem, 4vw, 3rem);
   font-weight: 600;
   color: rgba(14, 55, 14, 0.88);
   margin-top: 20px;
@@ -739,6 +732,7 @@ header .show {
 }
 .skills ul li i {
   font-size: 5rem;
+  padding-bottom: 10px;
 }
 .skills ul li .iconName {
   opacity: 0;
@@ -891,21 +885,13 @@ header .show {
   flex-direction: row;
   justify-content: center;
   padding: 0;
-  gap: 40px;
+  gap: 30px;
 }
 .contact .socialIcons .socialLink:hover {
   opacity: 0.5;
 }
-.contact .socialIcons i {
-  font-size: 2.55rem;
-}
 .contact .socialIcons i:hover {
   opacity: 0.5;
-}
-.contact .socialIcons svg {
-  height: 50px;
-  width: auto;
-  fill: rgba(14, 55, 14, 0.95);
 }
 
 footer {
@@ -918,10 +904,10 @@ footer p {
 }
 
 .top-link {
-  font-size: 1.25rem;
+  font-size: clamp(2rem, 2vw, 2.2rem);
   position: fixed;
-  top: 95%;
-  right: 5px;
+  top: 92%;
+  right: 0px;
   width: 2rem;
   height: 2rem;
   background-color: transparent;
@@ -1059,10 +1045,9 @@ footer p {
 }
 @media (min-width: 750px) {
   .top-link {
-    top: 85%;
-    right: 5px;
+    top: 90%;
+    right: 2%;
     background-color: transparent;
-    font-size: 2rem;
   }
 }
 @media (min-width: 950px) {
@@ -1127,6 +1112,9 @@ footer p {
   }
   .projects .wrapper {
     margin: 15px 15px;
+  }
+  .projects .skillsContainer ul .liveContainer {
+    flex-direction: row;
   }
   .contact h2 {
     margin: 0 auto;

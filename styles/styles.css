@@ -720,7 +720,7 @@ header .show {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 8px;
   padding: 50px 0 0 0;
   justify-items: center;
 }
@@ -868,8 +868,8 @@ header .show {
   position: absolute;
   display: block;
   height: 35%;
-  width: 65%;
-  right: 10%;
+  width: 60%;
+  right: 16%;
   top: 75%;
   z-index: -2;
   opacity: 0.5;
@@ -949,8 +949,8 @@ footer p {
     position: absolute;
     display: block;
     height: 50%;
-    width: 80%;
-    right: -5%;
+    width: 75%;
+    right: 0%;
     top: 45%;
     z-index: -2;
     opacity: 0.5;

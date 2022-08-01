@@ -33,5 +33,22 @@ myApp.closeMenu = function () {
         });
     }
 };
+let scrolling = false;
+//function to create back to top button on window scroll
 
+window.scroll = () => {
+    scrolling = true;
+};
+
+setInterval(() => {
+    const scrollHeight = window.scrollY;
+    const topLink = document.querySelector(".top-link");
+    if (scrollHeight > 500) {
+        scrolling = false;
+        topLink.classList.add("show-link");
+    } else {
+        topLink.classList.remove("show-link");
+    }
+}, 1000);
+// });
 myApp.init();

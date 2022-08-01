@@ -63,6 +63,50 @@
     }
 }
 
+//media queries for screen size at 530
+@media (min-width: 530px) {
+    .typedContainer {
+        display: inline-block;
+        .typed {
+            overflow: hidden;
+            border-right: 0.15em solid $offWhite;
+            white-space: nowrap;
+            width: fit-content;
+            margin: 0 auto;
+            animation: typing 3s steps(45, end) forwards,
+                blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: $offWhite;
+            }
+        }
+    }
+}
+
+//media for tablet screens at 750
+
+@media (min-width: 750px) {
+    .top-link {
+        top: 85%;
+        right: 5px;
+        background-color: transparent;
+        font-size: 2rem;
+    }
+}
+
 @media (min-width: 950px) {
     //header
     header .wrapper {

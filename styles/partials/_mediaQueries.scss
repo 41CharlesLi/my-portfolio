@@ -49,6 +49,16 @@
     }
 }
 
+//fixes padding bottom on typewriter effect
+@media (max-width: 765px) {
+    .intro {
+        .textContainer {
+            p {
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
 //media query for h2 contact pseudo element
 
 @media (min-width: 349px) {

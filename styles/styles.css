@@ -1016,6 +1016,11 @@ footer p {
     }
   }
 }
+@media (max-width: 765px) {
+  .intro .textContainer p {
+    padding-bottom: 0px;
+  }
+}
 @media (min-width: 349px) {
   .contact {
     background-color: #f6f6f6;

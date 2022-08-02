@@ -3,7 +3,6 @@ myApp = {};
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("navLinks");
 const navLinks = document.querySelectorAll(".navLink");
-console.log(navLinks);
 
 myApp.init = () => {
     myApp.closeMenu();
@@ -34,13 +33,15 @@ myApp.closeMenu = function () {
         });
     }
 };
-let scrolling = false;
+
 //function to create back to top button on window scroll
+let scrolling = false;
 
 window.scroll = () => {
     scrolling = true;
 };
 
+//throttles window event listener
 setInterval(() => {
     const scrollHeight = window.scrollY;
     const topLink = document.querySelector(".top-link");

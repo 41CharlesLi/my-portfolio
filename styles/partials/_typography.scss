@@ -10,7 +10,7 @@ h1,
 h2,
 h3,
 p {
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
     color: rgba(14, 55, 14, 0.95);
 }
 
@@ -28,15 +28,17 @@ h2 {
 }
 
 p {
-    font-size: clamp(1rem, 2vw, 1.8rem);
+    font-size: clamp(1rem, 2vw, 1.6rem);
     font-family: $bodyFont;
+    line-height: 2rem;
 }
 
 li,
 a {
     color: rgba(14, 55, 14, 0.95);
-    letter-spacing: 0.15rem;
-    font-size: clamp(1rem, 2vw, 1.8rem);
+    letter-spacing: 0.1rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    line-height: 1.8rem;
 }
 
 .socialContainer i {

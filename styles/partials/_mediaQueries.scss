@@ -77,6 +77,13 @@
     }
 }
 @media (max-width: 349px) {
+    .intro {
+        .textContainer {
+            p {
+                padding-bottom: 0px;
+            }
+        }
+    }
     .contact {
         .wrapper {
             padding: 15px 0 15px 0;

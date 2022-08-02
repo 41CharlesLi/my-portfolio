@@ -509,11 +509,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 2.5rem);
+  font-size: clamp(1rem, 2vw, 1.8rem);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -521,7 +523,7 @@ li,
 a {
   color: rgba(14, 55, 14, 0.95);
   letter-spacing: 0.15rem;
-  font-size: clamp(1rem, 2vw, 2.5rem);
+  font-size: clamp(1rem, 2vw, 1.8rem);
 }
 
 .socialContainer i {
@@ -674,7 +676,7 @@ header .show {
   opacity: 0.5;
 }
 .intro .textContainer p {
-  font-size: clamp(1.2rem, 4vw, 3rem);
+  font-size: clamp(1.1rem, 4vw, 3rem);
   font-weight: 600;
   color: rgba(14, 55, 14, 0.88);
   margin-top: 20px;
@@ -759,10 +761,10 @@ header .show {
   background: #fbc7c4;
   position: absolute;
   display: block;
-  height: 25px;
-  width: 200px;
+  height: 24px;
+  width: 182px;
   right: -10px;
-  top: 25px;
+  top: 19px;
   z-index: -3;
   opacity: 0.5;
 }
@@ -901,7 +903,7 @@ footer {
 }
 footer p {
   font-family: "Playfair Display SC", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .top-link {
@@ -949,7 +951,7 @@ footer p {
     transform: scale(1);
   }
 }
-@media (min-width: 335px) {
+@media (min-width: 295px) {
   .intro .textContainer span {
     position: relative;
     z-index: 1;
@@ -963,6 +965,52 @@ footer p {
     top: 45%;
     z-index: -4;
     opacity: 0.5;
+  }
+  .typedContainer {
+    display: inline-block;
+  }
+  .typedContainer .typed {
+    overflow: hidden;
+    border-right: 0.15em solid #f6f6f6;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    -webkit-animation: typing 3s steps(45, end) forwards, blink-caret 0.75s step-end infinite;
+            animation: typing 3s steps(45, end) forwards, blink-caret 0.75s step-end infinite;
+  }
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @-webkit-keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #f6f6f6;
+    }
+  }
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #f6f6f6;
+    }
   }
 }
 @media (min-width: 349px) {
@@ -990,6 +1038,17 @@ footer p {
     top: 45%;
     z-index: -2;
     opacity: 0.5;
+  }
+}
+@media (max-width: 349px) {
+  .contact .wrapper {
+    padding: 15px 0 15px 0;
+  }
+  .contact h2::after {
+    height: 50%;
+    width: 75%;
+    right: 0%;
+    top: 45%;
   }
 }
 @media (max-width: 1050px) {
@@ -1121,6 +1180,9 @@ footer p {
     grid-template-rows: 1fr 1fr;
     flex-wrap: wrap;
     gap: 40px;
+  }
+  .skills .skillsContainer ul li .iconName {
+    font-size: 1.2rem;
   }
   .skills .skillsContainer ul i {
     padding-bottom: 5px;

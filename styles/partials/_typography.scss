@@ -21,11 +21,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 $offWhite, 1px -1px 0 $offWhite,
+        -1px 1px 0 $offWhite, 1px 1px 0 $offWhite;
 }
 
 p {
-    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
     font-family: $bodyFont;
 }
 
@@ -33,7 +36,7 @@ li,
 a {
     color: rgba(14, 55, 14, 0.95);
     letter-spacing: 0.15rem;
-    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
 }
 
 .socialContainer i {

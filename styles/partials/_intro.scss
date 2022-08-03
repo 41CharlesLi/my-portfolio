@@ -6,7 +6,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/introBackground.jpg");
+    // background-image: url("../assets/introBackground.jpg");
+    background-image: url(../assets/giphy.gif);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -37,6 +38,8 @@
             color: rgba(14, 55, 14, 0.88);
             margin-top: 20px;
             padding-bottom: 10px;
+            text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6,
+                -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
         }
     }
 }

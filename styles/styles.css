@@ -506,6 +506,7 @@ h1 {
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 500;
   margin: 30px auto;
+  text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
 }
 
 h2 {
@@ -584,7 +585,7 @@ header .navLinks li a {
   text-decoration: none;
   font-family: "Playfair Display SC", serif;
   font-size: 1.5rem;
-  padding: 5px 40px 5px 40px;
+  padding: 5px 25px 5px 25px;
 }
 header .navLinks li a:hover {
   text-decoration: line-through;
@@ -654,7 +655,7 @@ header .show {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/introBackground.jpg");
+  background-image: url(../assets/giphy.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -683,6 +684,7 @@ header .show {
   color: rgba(14, 55, 14, 0.88);
   margin-top: 20px;
   padding-bottom: 10px;
+  text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
 }
 
 .skills {
@@ -892,6 +894,7 @@ header .show {
   justify-content: center;
   padding: 0;
   gap: 30px;
+  margin-top: 40px;
 }
 .contact .socialIcons .socialLink:hover {
   opacity: 0.5;

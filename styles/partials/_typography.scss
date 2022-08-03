@@ -18,6 +18,8 @@ h1 {
     font-size: clamp(3rem, 8vw, 7rem);
     font-weight: 500;
     margin: 30px auto;
+    text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6,
+        1px 1px 0 #f6f6f6;
 }
 
 h2 {

@@ -658,6 +658,7 @@ header .show {
   background-image: url(../assets/giphy.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .intro .textContainer span {
   font-weight: 600;
@@ -1168,6 +1169,9 @@ footer p {
   }
   header .navLinks li a {
     padding: 0;
+  }
+  .intro {
+    background-position: center;
   }
   .about .aboutWrapper {
     display: flex;

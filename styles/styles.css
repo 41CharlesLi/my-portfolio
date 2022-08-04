@@ -506,13 +506,11 @@ h1 {
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 500;
   margin: 30px auto;
-  text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
 }
 
 h2 {
   font-size: 2.1rem;
   font-weight: bold;
-  text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
 }
 
 p {
@@ -588,7 +586,6 @@ header .navLinks li a {
   padding: 5px 25px 5px 25px;
 }
 header .navLinks li a:hover {
-  text-decoration: line-through;
   opacity: 0.7;
 }
 header .show {
@@ -642,6 +639,7 @@ header .show {
   flex-direction: row;
   gap: 30px;
   padding: 0;
+  align-items: center;
 }
 .about ul i:hover {
   opacity: 0.5;
@@ -685,7 +683,6 @@ header .show {
   color: rgba(14, 55, 14, 0.88);
   margin-top: 20px;
   padding-bottom: 10px;
-  text-shadow: -1px -1px 0 #f6f6f6, 1px -1px 0 #f6f6f6, -1px 1px 0 #f6f6f6, 1px 1px 0 #f6f6f6;
 }
 
 .skills {
@@ -753,7 +750,8 @@ header .show {
   margin-top: 50px;
 }
 .projects .wrapper {
-  margin: 15px;
+  margin: 0px;
+  padding: 25px;
 }
 .projects .wrapper h2 {
   position: relative;
@@ -1184,7 +1182,7 @@ footer p {
   }
   .about .aboutWrapper .textContainer {
     width: 60vw;
-    max-width: 850px;
+    max-width: 1300px;
   }
   .skills {
     max-height: 900px;

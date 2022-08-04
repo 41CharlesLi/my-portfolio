@@ -655,7 +655,7 @@ header .show {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/giphy.gif);
+  background-image: url(../../assets/introBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;

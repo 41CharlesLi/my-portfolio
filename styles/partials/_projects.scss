@@ -22,7 +22,7 @@
         }
         .projectContainer {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             overflow: hidden;
             .textContainer {
@@ -45,18 +45,6 @@
                 max-width: 700px;
             }
         }
-        .textContainer ul {
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            font-family: $bodyFont;
-            font-size: 1.5rem;
-            width: 80vw;
-            list-style: decimal inside none;
-            margin-bottom: 40px;
-            gap: 10px;
-            color: rgba(14, 55, 14, 0.95);
-        }
     }
 
     .skillsContainer {
@@ -65,7 +53,6 @@
             padding: 0;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
             li {
@@ -86,7 +73,7 @@
             }
             .liveContainer {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 gap: 15px;
                 li {
                     padding: 6px 12px 6px 12px;

@@ -774,7 +774,7 @@ header .show {
 }
 .projects .wrapper .projectContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   overflow: hidden;
 }
@@ -797,26 +797,13 @@ header .show {
   width: 95%;
   max-width: 700px;
 }
-.projects .wrapper .textContainer ul {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  width: 80vw;
-  list-style: decimal inside none;
-  margin-bottom: 40px;
-  gap: 10px;
-  color: rgba(14, 55, 14, 0.95);
-}
 .projects .skillsContainer ul {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 15px;
-  justify-content: center;
+  justify-content: left;
 }
 .projects .skillsContainer ul li {
   width: -webkit-max-content;
@@ -838,7 +825,7 @@ header .show {
 }
 .projects .skillsContainer ul .liveContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
 }
 .projects .skillsContainer ul .liveContainer li {
@@ -1258,8 +1245,5 @@ footer p {
     word-break: break-word;
     max-width: 1600px;
     padding: 0 15px;
-  }
-  .projects .wrapper .textContainer ul {
-    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
